@@ -64,7 +64,7 @@ public partial class MainForm : Form
         if (!string.IsNullOrWhiteSpace(youtubeLink) && _currentProcess == null)
         {
             ChangeActionButtonsEnabled(false);
-            StartProcess($"yt-dlp -f bestaudio -x --audio-format mp3 --audio-quality 0 --no-playlist \"{youtubeLink}\"");
+            StartProcess($"yt-dlp -f bestaudio -x --audio-format mp3 --audio-quality 0 --no-mtime --no-playlist \"{youtubeLink}\"");
             linkInput.Clear();
         }
     }
@@ -74,7 +74,7 @@ public partial class MainForm : Form
         var youtubeLink = linkInput.Text;
         if (!string.IsNullOrWhiteSpace(youtubeLink) && _currentProcess == null)
         {
-            StartProcess($"yt-dlp -f bestvideo+bestaudio --no-playlist \"{youtubeLink}\"");
+            StartProcess($"yt-dlp -f bestvideo+bestaudio --no-mtime --no-playlist \"{youtubeLink}\"");
             linkInput.Clear();
         }
     }
