@@ -39,17 +39,19 @@ partial class MainForm
         // 
         // linkInputLabel
         // 
+        linkInputLabel.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)0));
         linkInputLabel.Location = new System.Drawing.Point(12, 23);
         linkInputLabel.Name = "linkInputLabel";
-        linkInputLabel.Size = new System.Drawing.Size(555, 18);
+        linkInputLabel.Size = new System.Drawing.Size(761, 38);
         linkInputLabel.TabIndex = 1;
         linkInputLabel.Text = "Įklijuokite nuorodą:";
         // 
         // mp3Button
         // 
-        mp3Button.Location = new System.Drawing.Point(12, 93);
+        mp3Button.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)0));
+        mp3Button.Location = new System.Drawing.Point(12, 122);
         mp3Button.Name = "mp3Button";
-        mp3Button.Size = new System.Drawing.Size(267, 74);
+        mp3Button.Size = new System.Drawing.Size(356, 74);
         mp3Button.TabIndex = 2;
         mp3Button.Text = ".mp3";
         mp3Button.UseVisualStyleBackColor = true;
@@ -57,9 +59,10 @@ partial class MainForm
         // 
         // mp4Button
         // 
-        mp4Button.Location = new System.Drawing.Point(301, 93);
+        mp4Button.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)0));
+        mp4Button.Location = new System.Drawing.Point(417, 122);
         mp4Button.Name = "mp4Button";
-        mp4Button.Size = new System.Drawing.Size(267, 74);
+        mp4Button.Size = new System.Drawing.Size(356, 74);
         mp4Button.TabIndex = 3;
         mp4Button.Text = ".mp4";
         mp4Button.UseVisualStyleBackColor = true;
@@ -67,27 +70,29 @@ partial class MainForm
         // 
         // outputBox
         // 
-        outputBox.Location = new System.Drawing.Point(12, 202);
+        outputBox.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)0));
+        outputBox.Location = new System.Drawing.Point(12, 220);
         outputBox.Multiline = true;
         outputBox.Name = "outputBox";
-        outputBox.ReadOnly = true;
         outputBox.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-        outputBox.Size = new System.Drawing.Size(554, 200);
+        outputBox.Size = new System.Drawing.Size(761, 300);
         outputBox.TabIndex = 4;
         // 
         // linkInput
         // 
-        linkInput.Location = new System.Drawing.Point(12, 47);
+        linkInput.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)0));
+        linkInput.Location = new System.Drawing.Point(12, 64);
         linkInput.Name = "linkInput";
         linkInput.PlaceholderText = "Youtube nuoroda";
-        linkInput.Size = new System.Drawing.Size(554, 23);
+        linkInput.Size = new System.Drawing.Size(761, 35);
         linkInput.TabIndex = 5;
         // 
         // cancelButton
         // 
-        cancelButton.Location = new System.Drawing.Point(480, 410);
+        cancelButton.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)0));
+        cancelButton.Location = new System.Drawing.Point(656, 531);
         cancelButton.Name = "cancelButton";
-        cancelButton.Size = new System.Drawing.Size(86, 28);
+        cancelButton.Size = new System.Drawing.Size(117, 48);
         cancelButton.TabIndex = 6;
         cancelButton.Text = "Atšaukti";
         cancelButton.UseVisualStyleBackColor = true;
@@ -98,7 +103,7 @@ partial class MainForm
         // 
         AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
         AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-        ClientSize = new System.Drawing.Size(583, 450);
+        ClientSize = new System.Drawing.Size(785, 591);
         Controls.Add(cancelButton);
         Controls.Add(linkInput);
         Controls.Add(outputBox);
