@@ -98,8 +98,8 @@ public class AppSettingsService : IAppSettingsService
             10,
             10,
             downloadsPath,
-            "-f bestaudio -x --audio-format mp3 --audio-quality 0 --no-mtime --no-playlist",
-            "-f bestvideo+bestaudio --no-mtime --no-playlist"
+            "-f bestaudio -x --audio-format mp3 --audio-quality 0 --no-mtime --no-playlist --no-overwrites",
+            "-f bestvideo+bestaudio --no-mtime --no-playlist --no-overwrites"
         );
     }
 
