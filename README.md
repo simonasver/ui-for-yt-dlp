@@ -16,7 +16,6 @@
 - Only working on Windows machines.
 
 ## Future TODOs
-1. Add installation process to download all files in one click
-2. Add ability to change config for each button in UI
-3. Add ability to change global config (%appdata%/ytdlp) in UI
-4. Add internationalization
+1. Add installation process to download and setup everything one click
+2. Add internationalization
+3. Add design customization settings (mainly text size)
