@@ -30,8 +30,8 @@ The goal is to provide a simple experience for non-technical users.
 1. Download source code
 2. Compile it
 3. Compact compiled code to executable file by using
-   `dotnet publish -c Release -r win-x64 --self-contained true /p:PublishSingleFile=true /p:IncludeAllContentForSelfExtract=true -o ./Publish`
-4. Run compiled executable which can be found in `./Publish`
+   `dotnet publish`
+4. Run compiled executable which can be found in `./bin/Release/net9.0-windows/win-x64/publish`
 
 ## Usage
 

@@ -25,13 +25,13 @@ public class DownloadService(
         if (!string.IsNullOrWhiteSpace(youtubeLink) && _currentProcess == null)
         {
             onActionButtonsEnabled(false);
-            
+
             var settings = appSettingsService.GetSettings();
             var mp3Settings = settings.Mp3Config;
             var downloadedFilePath = GetDownloadFilePath(settings.DownloadFileLocation);
-            
-            StartProcess(
-                $"yt-dlp {mp3Settings} -o {downloadedFilePath} \"{youtubeLink}\"");
+
+            StartDownloadProcess(
+                $"{mp3Settings} -o {downloadedFilePath} \"{youtubeLink}\"");
         }
     }
 
@@ -40,12 +40,12 @@ public class DownloadService(
         if (!string.IsNullOrWhiteSpace(youtubeLink) && _currentProcess == null)
         {
             onActionButtonsEnabled(false);
-            
+
             var settings = appSettingsService.GetSettings();
             var mp4Settings = settings.Mp4Config;
             var downloadFilePath = GetDownloadFilePath(settings.DownloadFileLocation);
-            
-            StartProcess($"yt-dlp {mp4Settings} -o {downloadFilePath} \"{youtubeLink}\"");
+
+            StartDownloadProcess($"{mp4Settings} -o {downloadFilePath} \"{youtubeLink}\"");
         }
     }
 
@@ -73,11 +73,15 @@ public class DownloadService(
         return $"{downloadLocationPath}\\{_downloadedFileName}";
     }
 
-    private void StartProcess(string command)
+    private void StartDownloadProcess(string command)
     {
+        var appDirectory = AppContext.BaseDirectory;
+        var relativeYtDlpPath = @"Tools\yt-dlp.exe";
+        var fullYtDlpPath = Path.Combine(appDirectory, relativeYtDlpPath);
+
         var process = new Process
         {
-            StartInfo = new ProcessStartInfo("cmd.exe", "/c " + command)
+            StartInfo = new ProcessStartInfo(fullYtDlpPath, command)
             {
                 RedirectStandardInput = true,
                 RedirectStandardOutput = true,
