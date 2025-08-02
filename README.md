@@ -11,7 +11,7 @@ The goal is to provide a simple experience for non-technical users.
 ### Option 1: Pre-compiled installer
 
 - Download installer
-  from [here](https://github.com/simonasver/ui-for-yt-dlp/releases/download/v1.0.0/UiForYtDlpInstaller.exe)
+  from [here](https://github.com/simonasver/ui-for-yt-dlp/releases/tag/latest)
 - Install and start using the program
 
 ### Option 2: Compiling from source code
