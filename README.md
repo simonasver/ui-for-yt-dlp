@@ -19,3 +19,4 @@
 1. Add installation process to download all files in one click
 2. Add ability to change config for each button in UI
 3. Add ability to change global config (%appdata%/ytdlp) in UI
+4. Add internationalization
