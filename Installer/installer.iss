@@ -1,7 +1,8 @@
 ﻿[Setup]
 AppName=UiForYtDlp
 AppVersion=1.0
-DefaultDirName={commonpf}\UiForYtDlp
+DisableDirPage=yes
+DefaultDirName={localappdata}\UiForYtDlp
 DefaultGroupName=UiForYtDlp
 OutputBaseFilename=UiForYtDlpInstaller
 OutputDir=..
